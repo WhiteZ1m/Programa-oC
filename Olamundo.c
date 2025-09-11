@@ -1,31 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 
 int main (){
 
-    char login[31];
-    char senha[31];
-    int ae2;
-    int chaveHash = 221104;
-    int chaveHashText;
+    int escolhaJogador, escolhaComputador;
+    srand(time(0));
+   
+     //Menu:
+    printf("Jogo de jokenpô\n");
+    prinf("Escolha uma opção:\n");
+    prinf("1. Pedra\n");
+    prinf("2. Papel\n");
+    prinf("3. Tesoura\n");
+    prinf("Digite sua escolha:\n");
 
-    printf("Insira seu login: \n");
-    scanf("%s", &login);
-    printf("Insira sua senha: \n");
-    scanf("%s", &senha);
-    printf("Insira seu código AE2 do seu app ou SMS: \n");
-    scanf("%d", &ae2);
-    printf("Insira sua chave privada para descriptografia: \n");
-    scanf("%d", &chaveHashText);
 
-     if (chaveHashText == chaveHash){
 
-         printf("Login efetuado com sucesso!\n");
-
-     } else{
-
-      printf("Chave incorreta!\n");
-
-     }
+    escolhaComputador = rand() % 3 + 1;
      
 return 0;
 
