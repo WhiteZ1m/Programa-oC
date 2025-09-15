@@ -2,6 +2,9 @@
 
 
 int main(){
+/*
+
+// Loop While:
 
  int i = 1;
 
@@ -15,6 +18,39 @@ int main(){
 
 return 0; 
 
+*/
+
+/*
+
+// Loop Do While:
+
+
+int i = 1;
+
+do{
+
+ printf("Execução do i: %d\n", i);
+ i++;
+
+}while (i <= 5);
+
+return 0;
+
+*/
+
+/*
+
+// Loop for:
+
+for (int i = 1; i <= 5; i++){
+
+  printf("O valor de i é: %d\n", i);
+
+}
+
+return 0;
+
+*/
 
 
 
